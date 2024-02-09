@@ -1,4 +1,6 @@
 <?php 
+//initialize session
+session_start();
 
 //database connection
 $dsn = 'mysql:dbname=holidaybooker;=localhost';

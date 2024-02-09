@@ -12,7 +12,9 @@
         <li class="nav-item ms-1">
           <a class="nav-link" href="">*Currency*</a>
         </li>
-        <?php if(isset($_SESSION["logged_in"]))
+
+        <?php 
+        if(isset($_SESSION["logged_in"]) == TRUE)
         {
           echo "<li class='nav-item ms-1'><a class='btn btn-danger' href='logout.php'>logout</a></li>";
         } else {
