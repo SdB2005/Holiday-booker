@@ -3,7 +3,6 @@
 require_once("../config/config.php");
 require_once("includes/bootstrap.php");
 
-$users = UserManager::getAllUsers();
 ?>
 
 <!DOCTYPE html>
