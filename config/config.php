@@ -1,5 +1,6 @@
 <?php 
 
+//database connection
 $dsn = 'mysql:dbname=holidaybooker;=localhost';
 $user = 'root';
 $password = '';
@@ -7,7 +8,7 @@ $password = '';
 $con = new PDO($dsn, $user, $password);
 $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-
+//autoloader
 spl_autoload_register(function ($className) {
   $classFile = str_replace('\\', '/', $className) . '.php';
   
@@ -16,5 +17,4 @@ spl_autoload_register(function ($className) {
   require ('../src/managers/' . $classFile);
   } 
   });
-
 ?>
