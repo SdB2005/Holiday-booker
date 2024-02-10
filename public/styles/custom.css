@@ -15,3 +15,46 @@
   background-color: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
+
+.top-container {
+  height: 350px;
+}
+
+.holiday-finder{
+  width: fit-content;
+}
+
+.dateRangePicker {
+  width: 225px;
+}
+
+.popular-destination-card {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+}
+
+.popular-destination-card img {
+  max-width: 500px;
+  height: auto;
+  filter: brightness(75%)
+}
+
+.popular-destination-card h3 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .popular-destination-card {
+      max-width: 100%; 
+  }
+}
