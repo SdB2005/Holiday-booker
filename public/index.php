@@ -44,7 +44,7 @@ require_once("includes/bootstrap.php");
       <div class="col d-flex justify-content-center position-relative">
         <a href="">
           <div class="popular-destination-card">
-            <img src="img/netherlands.png" alt="">
+            <img src="img/netherlands.png" alt="" class="rounded">
             <h3>Netherlands</h3>
           </div>
         </a>
@@ -52,7 +52,7 @@ require_once("includes/bootstrap.php");
       <div class="col d-flex justify-content-center position-relative">
         <a href="">
           <div class="popular-destination-card">
-            <img src="img/greece.png" alt="">
+            <img src="img/greece.png" alt="" class="rounded">
             <h3>Greece</h3>
           </div>
         </a>
@@ -60,7 +60,7 @@ require_once("includes/bootstrap.php");
       <div class="col d-flex justify-content-center position-relative">
         <a href="">
           <div class="popular-destination-card">
-            <img src="img/spain.png" alt="">
+            <img src="img/spain.png" alt="" class="rounded">
             <h3>Spain</h3>
           </div>
         </a>
