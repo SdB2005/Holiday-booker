@@ -53,6 +53,19 @@
   text-align: center;
 }
 
+.stay-result-card {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  height: fit-content;
+}
+
+.stay-result-card img{
+  /* padding-top: 50px;
+  padding-left: 20px; */
+  max-width: 400px;
+  height: 298px;
+}
+
 @media screen and (max-width: 768px) {
   .popular-destination-card {
       max-width: 100%; 
