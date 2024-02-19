@@ -1,0 +1,5 @@
+-bigger registration form 
+-reset password page
+-language switcher
+-currency switcher
+-searchsuggestion limiter or scroll
