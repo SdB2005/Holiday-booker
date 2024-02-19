@@ -3,6 +3,13 @@
 require_once("../config/config.php");
 require_once("includes/bootstrap.php");
 
+if($_GET) {
+  $location = htmlspecialchars($_GET["location"]);
+  $dates = htmlspecialchars($_GET["dateRange"]);
+  $guestCount = htmlspecialchars($_GET["guests"]);
+  header("location: searchResults.php?".$location."&dates=".$dates."&guests=".$guestCount);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -21,17 +28,20 @@ require_once("includes/bootstrap.php");
   <?php require_once("includes/navbar.php"); ?>
   <div class="container-fluid top-container bg-success d-flex flex-column justify-content-center align-items-center">
     <h1 class="text-white pb-3">Start finding your perfect place to stay!</h1>
-    <form method="post">
+    <form method="get">
       <div class="holiday-finder bg-warning py-1 px-1 rounded">
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" id="searchInput" placeholder="Search Country or Place" name="place">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search Country or Place" name="location">
           </div>
           <div class="col">
             <input type="date" class="form-control dateRangePicker" id="dateRangePicker" placeholder="Select Dates" name="dateRange">
           </div>
           <div class="col">
             <input type="number" min="1" class="form-control" placeholder="How many people?" name="guests">
+          </div>
+          <div class="col-md-2">
+            <input type="submit" class="btn btn-primary" value="Search">
           </div>
         </div>
       </div>

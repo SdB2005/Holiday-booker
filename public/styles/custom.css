@@ -66,6 +66,22 @@
   height: 298px;
 }
 
+.listing-carousel {
+  width: 800px;
+  height: 500px;
+}
+
+.listing-carousel img {
+  width: 800px;
+  height: 500px;
+}
+
+.suggestion-list {
+  max-height: 125px;
+  overflow-y: auto;
+  position: absolute;
+}
+
 @media screen and (max-width: 768px) {
   .popular-destination-card {
       max-width: 100%; 
